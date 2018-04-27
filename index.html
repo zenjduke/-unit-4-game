@@ -1,0 +1,57 @@
+<!doctype html>
+    
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+        <!--My Style Sheet-->
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <title>My Rupee Game</title>
+    </head>
+
+    <body>
+
+        <div class="jumbotron">
+            <h1 class="display-4">Rupee Collector!</h1>
+            <p class="lead">Win the game by matching your purse total to the rupees in the bank. Don't go over, or you lose!</p>
+            <hr class="my-4">
+            <p>There are four rupees below. By clicking on a rupee, you add the value of that rupee to your purse. The value of each rupee is hidden until you select it the first time, but remains the same each round of the game.</p>
+            <div id="tally"><h2 id="wins">Wins: 0</h2><h2 id="losses">Losses: 0</h2></div>
+        </div>
+    
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <!--My Script File-->
+        <script src="assets/javascript/game.js"></script>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img id="rupPink" class="crystal" src="assets/images/pink.jpeg" alt="pinkCrystal">
+                    <img id="rupBlue" class="crystal" src="assets/images/blue.jpeg" alt="blueCrystal">
+                    <img id="rupGold" class="crystal" src="assets/images/gold.jpeg" alt="goldCrystal">
+                    <img id="rupOrange" class="crystal" src="assets/images/orange.jpeg" alt="orangeCrystal">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><h3>Rupees In The Bank: </h3></p>
+                    <div id="bank"></div>
+                </div>
+                <div class="col-md-6">
+                    <p><h3>Your Purse:</h3></p>
+                    <div id="score"></div>  
+                </div>   
+            </div>
+            
+        </div>
+    </body>
+</html>
