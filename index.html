@@ -5,53 +5,101 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-        <!--My Style Sheet-->
-        <link rel="stylesheet" href="assets/css/reset.css">
-        <link rel="stylesheet" href="assets/css/style.css">
+		<title>Crystal Collector</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+	</head>
+	<body>
 
-        <title>My Rupee Game</title>
-    </head>
+		<!-- Header -->
+			<section id="header" class="dark">
+				<header>
+					<h1>Crystal Collector</h1>
+					<p>Win the game by matching your purse total to the bank total.<br>Don't go over, or you lose!</p>
+				</header>
+				<footer>
+					<a href="#first" id="play" class="button scrolly">PLAY</a>
+				</footer>
+			</section>
 
-    <body>
+		<!-- First -->
+			<!-- First -->
+			<section id="first" class="main">
+					<header>
+						<div class="container">
+							<h2>Rules:</h2>
+							<p>There are four crystals below. By clicking on a crystal, you add the value of that rupee to your purse. The value of each rupee is hidden until you select it the first time, but remains the same each round of the game.</p>
+						</div>
+					</header>
+					<div class="content dark style1 featured">
+						<div class="container">
+							<div class="row">
+								<div class="3u 12u(narrow)">
+									<section>
+										<span class="feature-icon">	<img id="crystalOrange" class="crystal" src="images/crystal5.jpeg" alt="orangeCrystal"></span>
+									</section>
+								</div>
+								<div class="3u 12u(narrow)">
+									<section>
+										<span class="feature-icon"><img id="crystalGold" class="crystal" src="images/crystal3.png" alt="goldCrystal"></span>
+									</section>
+								</div>
+								<div class="3u 12u(narrow)">
+									<section>
+										<span class="feature-icon"><img id="crystalBlue" class="crystal" src="images/crystal2.png" alt="blueCrystal"></span>			
+									</section>
+								</div>
+								<div class="3u 12u(narrow)">
+									<section>
+											<span class="feature-icon"><img id="crystalPink" class="crystal" src="images/crystal1.png" alt="pinkCrystal"></span></span>
+									</section>
+								</div>
+							</div>
+							<div class="row" id = "scorebox">
+								<div class="6u 12u(narrow)">
+										<p><h3>Crystals In The Bag: </h3></p>
+										<div id="bank"></div>
+								</div>
+								<div class="6u 12u(narrow)">
+										<p><h3>Your Purse:</h3></p>
+										<div id="score"></div>  
+								</div>
+							</div>
+							<div class="row">
+								<div class="12u">
+									<footer>
+											<div id="wins" class="button scrolly">Wins: 0</div>
+											<div id="losses" class="button scrolly">Losses: 0</div><br>
+											<a id="reset" class="button scrolly">Reset</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
-        <div class="jumbotron">
-            <h1 class="display-4">Rupee Collector!</h1>
-            <p class="lead">Win the game by matching your purse total to the rupees in the bank. Don't go over, or you lose!</p>
-            <hr class="my-4">
-            <p>There are four rupees below. By clicking on a rupee, you add the value of that rupee to your purse. The value of each rupee is hidden until you select it the first time, but remains the same each round of the game.</p>
-            <div id="tally"><h2 id="wins">Wins: 0</h2><h2 id="losses">Losses: 0</h2></div>
-        </div>
-    
-        <!-- JQuery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="www.zennajduke.com" class="icon fa-star"><span class="label">About Me</span></a></li>
 
-        <!--My Script File-->
-        <script src="assets/javascript/game.js"></script>
+				</ul>
+				<div class="copyright">
+					<ul class="menu">
+						<li>&copy; 2018 ZDuke. All rights reserved.</li>
+					</ul>
+				</div>
+			</section>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <img id="crystalPink" class="crystal" src="assets/images/pink.jpeg" alt="pinkCrystal">
-                    <img id="crystalBlue" class="crystal" src="assets/images/blue.jpeg" alt="blueCrystal">
-                    <img id="crystalGold" class="crystal" src="assets/images/gold.jpeg" alt="goldCrystal">
-                    <img id="crystalOrange" class="crystal" src="assets/images/orange.jpeg" alt="orangeCrystal">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <p><h3>Rupees In The Bank: </h3></p>
-                    <div id="bank"></div>
-                </div>
-                <div class="col-md-6">
-                    <p><h3>Your Purse:</h3></p>
-                    <div id="score"></div>  
-                </div>   
-            </div>
-            
-        </div>
-    </body>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
